@@ -1,0 +1,113 @@
+@font-face{
+    font-family: 'robbo_regular';
+    src: url('../fonts/Roboto/Roboto-Regular.ttf');
+}
+
+@font-face{
+    font-family: 'robbo_boldder';
+    src: url('../fonts/Roboto/Roboto-Black.ttf');
+}
+
+*{
+    --ms-effects-elevation4: 0px 2px 4px rgba(0, 0, 0, 0.14), 0px 0px 2px rgba(0, 0, 0, 0.12);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: robbo_regular,'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+    
+}
+
+body{
+    background-color: #F1F0F4;
+}
+
+
+h1,h2,h3,h4,h5,h6
+{
+    font-family: robbo_boldder,'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bolder;
+}
+
+footer{
+    color: #979696
+}
+
+
+.inputs-calculadora{
+    flex-wrap: wrap;
+    min-width: 400px;
+}
+
+.contenedor
+{
+    background-color: white;
+    border-radius: 1.5rem;
+    box-shadow: var(--ms-effects-elevation4);
+    margin-top: 2.5rem;
+    padding: 2.5rem;
+}
+
+.btn-label
+{
+    visibility: hidden;
+}
+
+.titulo h1{
+    text-shadow: 1px 1px;
+    
+}
+
+.contenedor-resultado
+{
+    border: 1px solid #979696;
+    border-radius: 0.5rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    overflow-y: auto;
+}
+
+.formula-contenedor
+{
+    font-size: 1.5rem;
+}
+
+.display-none
+{ 
+    display: none !important;
+}
+
+.butttons-container{
+
+    display: flex;
+    flex-direction: column;
+    width: 2%;
+    gap: 0.5rem;
+    position: fixed;
+    z-index: 2;
+    bottom: 20px; /* Distancia desde la parte inferior */
+    right: 50px; /* Distancia desde la parte derecha */
+    transform: translate(0, 0) scale(1);
+}
+
+.button-nav{
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 1.5rem;
+    border: none;
+}
+
+.button-nav svg{
+    fill: #979696;
+}
+
+.button-nav:hover svg{
+    fill: #ffffff;
+}
+
+
